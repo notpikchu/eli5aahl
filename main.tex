@@ -1,0 +1,96 @@
+\documentclass[letterpaper,11pt,oneside]{book}
+\usepackage[table, svgnames, dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{changepage}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{pgfplots}
+\usepackage[breakable, theorems, skins]{tcolorbox}
+\usepackage{caption}
+% PGFPlots Extra Stuff
+\usepgfplotslibrary{polar}
+\usepgflibrary{shapes.geometric}
+\usetikzlibrary{calc}
+\pgfplotsset{coords/.append style={axis x line=middle, axis y line=middle, xlabel={$x$}, ylabel={$y$}, axis equal }}
+% Other things
+\usetikzlibrary{external}
+\usepackage[left=2cm,right=2cm]{geometry}
+\graphicspath{topics/ext/}
+\title{Explain IB Math AA HL Like I'm 5}
+\author{First Last}
+\date{Compiled: \today}
+\usepackage{subfiles}
+% Defining functions here
+\newtcolorbox{keyConcept}[1]{colback=yellow!5!white,colframe=red!75!yellow,fonttitle=\big,title=#1}
+%Defining colours
+\definecolor{lighterBlue}{rgb}{0.36, 0.54, 0.66}
+\definecolor{keyIdea}{HTML}{34d1ad}
+\definecolor{practice}{HTML}{CCCCFF}
+\DeclareMathOperator\cis{cis}
+
+% Begin DOC
+\pgfplotsset{compat=1.17} 
+\begin{document}
+
+% TOC STARTS
+\frontmatter
+\clearpage\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\chapter*{Preface} \addcontentsline{toc}{chapter}{Preface}
+\setcounter{page}{1}
+\markboth{Preface}{Preface}
+\subfile{intro}
+
+% BOOK START
+\mainmatter
+\thispagestyle{empty}
+\part*{Topic 1: Algebra}
+\newpage
+\subfile{topics/t1.tex}*
+\addcontentsline{toc}{chapter}{Algebra}
+\markboth{Algebra}{Algebra}
+
+\part*{Topic 2: Functions}
+\thispagestyle{empty}
+\subfile{topics/t2}
+\addcontentsline{toc}{chapter}{Functions}
+\markboth{Functions}{Functions}
+
+\part*{Topic 3, Part 1: Trigonometry}
+\thispagestyle{empty}
+\subfile{topics/t3p1}
+\addcontentsline{toc}{chapter}{Trigonometry}
+\markboth{Topic 3.1: Trigonometry}{Trigonometry}
+
+\part*{Topic 3, Part 2: Geometry and Vectors}
+\thispagestyle{empty}
+\subfile{topics/t3p2}
+\addcontentsline{toc}{chapter}{Geometry and Vectors}
+\markboth{Topic 3.2: Geometry and Vectors}{Geometry and Vectors}
+
+\part*{Topic 4: Statistics}
+\thispagestyle{empty}
+\subfile{topics/t4}
+\addcontentsline{toc}{chapter}{Statistics}
+\markboth{Topic 4: Statistics}{Statistics}
+
+\part*{Topic 5: Calculus}
+\thispagestyle{empty}
+\subfile{topics/t5}
+\addcontentsline{toc}{chapter}{Calculus}
+\markboth{Topic 5: Calculus}{Calculus}
+
+\part*{Exam Prep}
+\subfile{examprep}
+\addcontentsline{toc}{chapter}{Exam Prep}
+\markboth{Exam Prep}{[POST-BOOK] Exam Preparation}
+
+\end{document}
