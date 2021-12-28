@@ -23,7 +23,7 @@
 \usepackage[left=2cm,right=2cm]{geometry}
 \graphicspath{topics/ext/}
 \title{Explain IB Math AA HL Like I'm 5}
-\author{First Last}
+\author{PikChu\#6056}
 \date{Compiled: \today}
 \usepackage{subfiles}
 % Defining functions here
@@ -33,7 +33,7 @@
 \definecolor{keyIdea}{HTML}{34d1ad}
 \definecolor{practice}{HTML}{CCCCFF}
 \DeclareMathOperator\cis{cis}
-
+\setcounter{tocdepth}{5}
 % Begin DOC
 \pgfplotsset{compat=1.17} 
 \begin{document}
@@ -54,43 +54,8 @@
 \thispagestyle{empty}
 \part*{Topic 1: Algebra}
 \newpage
-\subfile{topics/t1.tex}*
-\addcontentsline{toc}{chapter}{Algebra}
+\addcontentsline{toc}{part}{Topic 1: Algebra}
 \markboth{Algebra}{Algebra}
-
-\part*{Topic 2: Functions}
-\thispagestyle{empty}
-\subfile{topics/t2}
-\addcontentsline{toc}{chapter}{Functions}
-\markboth{Functions}{Functions}
-
-\part*{Topic 3, Part 1: Trigonometry}
-\thispagestyle{empty}
-\subfile{topics/t3p1}
-\addcontentsline{toc}{chapter}{Trigonometry}
-\markboth{Topic 3.1: Trigonometry}{Trigonometry}
-
-\part*{Topic 3, Part 2: Geometry and Vectors}
-\thispagestyle{empty}
-\subfile{topics/t3p2}
-\addcontentsline{toc}{chapter}{Geometry and Vectors}
-\markboth{Topic 3.2: Geometry and Vectors}{Geometry and Vectors}
-
-\part*{Topic 4: Statistics}
-\thispagestyle{empty}
-\subfile{topics/t4}
-\addcontentsline{toc}{chapter}{Statistics}
-\markboth{Topic 4: Statistics}{Statistics}
-
-\part*{Topic 5: Calculus}
-\thispagestyle{empty}
-\subfile{topics/t5}
-\addcontentsline{toc}{chapter}{Calculus}
-\markboth{Topic 5: Calculus}{Calculus}
-
-\part*{Exam Prep}
-\subfile{examprep}
-\addcontentsline{toc}{chapter}{Exam Prep}
-\markboth{Exam Prep}{[POST-BOOK] Exam Preparation}
+\subfile{topics/t1.tex}*
 
 \end{document}

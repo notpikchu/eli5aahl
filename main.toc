@@ -1,11 +1,6 @@
 \contentsline {chapter}{Preface}{i}{chapter*.2}%
+\contentsline {part}{Topic 1: Algebra}{2}{part*.5}%
 \contentsline {chapter}{\numberline {1}An Introduction to Complex Numbers}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}An intuitive way of defining the 'imaginary' numbers.}{4}{section.1.1}%
 \contentsline {section}{\numberline {1.2}The Complex Plane}{6}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Euler's Form}{6}{section.1.3}%
-\contentsline {chapter}{Algebra}{6}{section.1.3}%
-\contentsline {chapter}{Functions}{9}{part*.9}%
-\contentsline {chapter}{Trigonometry}{10}{part*.10}%
-\contentsline {chapter}{Geometry and Vectors}{11}{part*.11}%
-\contentsline {chapter}{Statistics}{12}{part*.12}%
-\contentsline {chapter}{Calculus}{13}{part*.13}%
+\contentsline {section}{\numberline {1.3}Euler's Form}{7}{section.1.3}%
